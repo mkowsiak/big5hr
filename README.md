@@ -16,7 +16,7 @@ Because it is challenging to set path location inside `SPS` files dynamically, t
 
 ```
 find . -name “*.sps” -exec sed -i -e 's|@PROJECT_LOCATION@|/path/to/project/|g' {} \;
-find . -name “*.R” -exec sed -i -e 's|@PROJECT_LOCATION@|/path/to/project/|g' {} \;
+find . -name “*.R”   -exec sed -i -e 's|@PROJECT_LOCATION@|/path/to/project/|g' {} \;
 ```
 # Running the scripts
 
