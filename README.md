@@ -12,7 +12,7 @@ Please note that these scripts require a data set with the study participants' r
 
 For clarity, the `001-syntax-merge-results.sps` file is not meant to be run as it is used to merge results from independent surveys. Its presence here is purely for a comprehensive understanding of the data transformation process.
 
-Because it is challenging to set path location inside `SPS` files dynamically, there are placeholders inside all the files. You can easily replace them with sed.
+Because it is challenging to set path location inside `SPSS` files dynamically, there are placeholders inside all the files. You can easily replace them with sed.
 
 ```
 find . -name “*.sps” -exec sed -i -e 's|@PROJECT_LOCATION@|/path/to/project/|g' {} \;
